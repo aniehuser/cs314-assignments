@@ -8,24 +8,24 @@
 }
 
 body {
-	font-size: 100%;
 	font-family: 'lacuna', helvitica, sans-serif ;
 	text-align: center;
 	width: 100%;
 }
 
-section, nav, header {
-	padding: 2%;
+section, nav, header, footer {
+	width: 100%;
 }
 
 p {
-	padding-bottom: 15px;
+	padding-bottom: 1em;
 }
 
 h1,h2,h3,h4,h5,h6 {
 	text-transform: uppercase;
 	font-weight: normal;
-	padding-bottom: 10px;
+	padding-top: .5em;
+	padding-bottom: .5em;
 }
 
 h1 {
@@ -54,16 +54,15 @@ h6 {
 
 footer {
 	position: absolute;
-	height: 14px;
 	background-color: black;
 	color: white;
-	font-size: 6pt;
+	font-size: .5em;
 	text-align: left;
-	width: 100%;
+
 }
 
 .footText {
-	margin: 4px;
+	margin: .33em;
 }
 
 .cyanSection {
@@ -72,21 +71,27 @@ footer {
 }
 
 .blueSection {
-	height: 100px;
+	position: relative;
 	background-color: rgb(20, 20, 80);
+	padding-top: 5em;
+	padding-bottom: 5em;
 }
 
 .flexbox-center {
-	display: flex;
-	height: 375px;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	display: inline-flex;
+	width: 100%;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+	
 }
 
 
 .flexbox-right {
+	padding-top: .5em;
+	padding-right: 1em;
 	display: flex;
-	height: 20px;
 	align-items: center;
 	justify-content: center;
 	margin-left:auto;
@@ -95,25 +100,58 @@ footer {
 }
 
 .image {
-	float:left;
-	margin-right: 100px;
-	margin-left: 100px;
+	width: 2em;
 }
 
 .element {
 	float:left;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: .25em;
+	margin-right: .25em;
 }
 
 .button {
+	position: absolute;
 	background-color: inherit;
 	border: solid;
-	border-radius: 4px;
-	border-width: 1px;
+	border-radius: .4em;
+	border-width: .1em;
 	color:white;
 	font: 1em;
-	height: 25px;
-	margin-top: 45px;
 }
+
+.button:hover{
+	cursor: pointer;
+	filter: brightness(80%);
+}
+
+.button:active{
+	filter: brightness(30%);
+}
+
+.rainbow-gradient {
+	padding-top: 3em;
+	padding-bottom: 3em;
+	background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+	display: inline-flex;
+	align-content: stretch;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.rainbow-child {
+	width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
