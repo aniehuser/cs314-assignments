@@ -1,0 +1,79 @@
+@font-face {
+	font-family: 'lacuna';
+	src: url('./fonts/lacuna-webfont.eot');
+	src: url('./fonts/lacuna-webfont.eot?iefix') format('eot'),
+	     url('./fonts/lacuna-webfont.woff') format('woff'),
+	     url('./fonts/lacuna-webfont.ttf') format('truetype'),
+	     url('./fonts/lacuna-webfont.svg#webfont') format('svg'),
+	     url('./fonts/lacuna-webfont.woff2') format('woff2');
+}
+
+body {
+	font-family: 'lacuna', helvitica, sans-serif ;
+	text-align: center;
+}
+
+section, nav, header, body {
+	width: 100%;
+}
+
+p {
+	padding-bottom: 1em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	text-transform: uppercase;
+	padding-bottom: .25em;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+h6 {
+	font-size: .5em;
+}
+
+header {
+	padding-top: 3em;
+	padding-bottom: 1em;
+	width: 100%;
+	background-color: salmon;
+}
+
+section {
+	padding: 4%;
+	width: 92%;
+	background-color: rgb(240,240,240);
+}
+
+
+@media screen and (max-width: 768px) {
+	
+}
+
+
+
+
+
+
+
+
+
