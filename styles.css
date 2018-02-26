@@ -8,7 +8,7 @@
 	     url('./fonts/lacuna-webfont.woff2') format('woff2');
 }
 
-body {
+body{
 	font-family: 'lacuna', helvitica, sans-serif ;
 	text-align: center;
 }
@@ -65,18 +65,28 @@ section {
 	align-content: left;
 }
 
-
-@media screen and (max-width: 768px) {
-	
+input, textarea, select{
+	background-color: pink;
+	font-family: 'lacuna', helvitica, sans-serif;
+	border-color: salmon;
+	border-style: outset;
+	border-width: 2px;
 }
-
-input{
-
+textarea{
+	resize: none;
+}
+input:focus, textarea:focus, select:focus, button:focus {
+	outline-color: white;
+	outline-style: ridge;
 }
 
 label{
 	position: relative;
 	display: block;
+}
+
+.cursor:hover {
+	cursor: pointer;
 }
 
 .in {
@@ -112,16 +122,68 @@ label{
 .flexbox {
 	width: 100%;
 	display: inline-flex;
-	align-items: center;
-
+	height:2em;
+	padding-bottom: 1em;
+	justify-content: center;
 }
 
 .radbut {
-	width: 15%;
+	font-size: .75em;
+	width: 20%;
+	margin-bottom: .5em;
+}
+.radbut * {
+	margin-bottom: .5em;
+}
+.item {
+	width: 150px;
+	margin: 0 4em;
+}
+.item * {
+	width: 100%;
+	margin-top: .5em;
+	font-size: .7em
+}
+
+.button {
+	background-color: salmon;
+	border-color: pink;
+	border-width: 1.5px;
+	border-radius: 10em;
+	width: 5em;
+	height: 5em;
+}
+.extramargin{
+	margin-bottom: 0em;
+}
+
+textarea::placeholder, input::placeholder {
+	font-family: inherit;
+	color: white;
 }
 
 
-
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 10pt;
+	}
+	.extramargin{
+		margin-bottom: 5em;
+	}
+	.flexbox{
+		flex-wrap: wrap;
+		height: inherit;
+		position: static;
+	}
+	.radbut, .item{
+		width: 50%;
+		position: static;
+	}
+	.halfright, .halfleft{
+		left: 0;
+		position: static;
+	}
+}
 
 
 

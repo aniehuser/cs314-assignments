@@ -14,59 +14,76 @@
         </header>
         <section>
             <form class="in">
-                <input type="text" name="first">
+                <input type="text" name="first" placeholder="Enter Last Name">
                 <label for="first">First Name</label>
             </form>
             <form class="in">
-                <input type="text" name="last">
+                <input type="text" name="last" placeholder="Enter Last Name">
                 <label for="last">Last Name</label>
             </form>
             <form class="in">
-                <input type="text" name="email">
+                <input type="text" name="email" placeholder="example@domain.extension">
                 <label for="email">Email Address</label>
             </form>
-            <div class="in">
+            <div class="in extramargin">
                 <form class="halfleft">
-                    <input type="number" name="age">
+                    <input type="number" name="age" placeholder="Enter Age">
                     <label for="age">Age</label>
                 </form>
                 <form class="halfright">
-                    <input type="number" name="num">
+                    <input type="number" name="num" placeholder="Enter Favorite Number">
                     <label for="num">Favorite Number</label>
                 </form>
-            </div class="flexbox">
-                <form class="radbut">
-                    <input type="radio" name="fresh">
-                    <label for="fresh">Freshman</label>
-                </form>
-                <form class="radbut">
-                    <input type="radio" name="soph">
-                    <label for="soph">Sophomore</label>
-                </form>
-                <form class="radbut">
-                    <input type="radio" name="jun">
-                    <label for="jun">Junior</label>
-                </form>
-                <form class="radbut">
-                    <input type="radio" name="sen">
-                    <label for="sen">Senior</label>
-                </form>
-                <form class="radbut">
-                    <input type="radio" name="sen">
-                    <label for="sen">Other</label>
-                </form>
-            <div>
-                
             </div>
+            <form class="flexbox">
+                <div class="radbut">
+                    <input type="radio" name="grade" class="cursor">
+                    <label for="grade">Freshman</label>
+                </div>
+                <div class="radbut">
+                    <input type="radio" name="grade" class="cursor">
+                    <label for="grade">Sophomore</label>
+                </div>
+                <div class="radbut">
+                    <input type="radio" name="grade" class="cursor">
+                    <label for="grade">Junior</label>
+                </div>
+                <div class="radbut">
+                    <input type="radio" name="grade" class="cursor">
+                    <label for="grade">Senior</label>
+                </div>
+                <div class="radbut">
+                    <input type="radio" name="grade" class="cursor">
+                    <label for="grade">Other</label>
+                </div>
+            </form>
             <form class="in">
-                <textarea rows="4" name="text">Limit of * characters.</textarea>
+                <textarea rows="4" name="text" placeholder="Limit of 1000 characters"></textarea>
                 <label for="text">Write briefly about your favorite ice-cream</label>
             </form>
-            <form class="in">
-                
+            <br><br><br>
+            <form class="flexbox">
+                <div class="item">
+                    <select name="fav" class="cursor">
+                        <option value="Spring">Spring</option>
+                        <option value="Summer">Summer</option>
+                        <option value="Fall">Fall</option>
+                        <option value="Winter">Winter</option>
+                    </select>
+                    <label for="fav">Favorite Season</label>
+                </div>
+                <div class="item">
+                    <select name='least' class="cursor">
+                        <option value="Spring">Spring</option>
+                        <option value="Summer">Summer</option>
+                        <option value="Fall">Fall</option>
+                        <option value="Winter">Winter</option>
+                    </select>
+                    <label for="fav">Least Favorite Season</label>
+                </div>
             </form>
-            <form class="in">
-                
+            <form>
+                <button class="button cursor">Submit</button>
             </form>
         </section>
     </body>
