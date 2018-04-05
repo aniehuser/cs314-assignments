@@ -1,5 +1,8 @@
 "use strict";
 
+/////////////////////////////////////////
+/// Global-ish functions and variables //
+/////////////////////////////////////////
 let handle_input = function(input){
 	if(!input){
 		if(input == ""){
@@ -36,6 +39,17 @@ let is_all_ints = function (arr) {
 	}
 	return true;
 }
+
+let max_int = function(arr) {
+	let max = arr[0];
+	for(let i=1; i<arr.length; i++){
+		if(max < arr[i]){
+			max = arr[i];
+		}
+	}
+	return max;
+}
+
 
 
 
@@ -188,16 +202,6 @@ let even_int_array = function(arr) {
 	return out;
 }
 
-let max_int = function(arr) {
-	let max = arr[0];
-	for(let i=1; i<arr.length; i++){
-		if(max < arr[i]){
-			max = arr[i];
-		}
-	}
-	return max;
-}
-
 let largest_even_number = function() {
 	let input = prompt("Enter comma seperated list of integers:");
 	
@@ -230,8 +234,6 @@ let current_day = function(){
 	};
 
 	let myDate = new Date();
-	 // myDate.setHours(24);
-	// console.log(myDate.getHours()%12==0)
 	let am_pm = (myDate.getHours() >= 12) ? "PM" : "AM";
 	let minutes = ((myDate.getMinutes()<10) ? "0" : "") + myDate.getMinutes();
 	let hours = (myDate.getHours()%12==0) ? 12 : myDate.getHours()%12;
