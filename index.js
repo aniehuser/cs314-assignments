@@ -41,7 +41,9 @@ let is_all_ints = function (arr) {
 
 let msg = "Input some string:";
 
+////////////////////////////////////
 /// 1 -- Char Swap
+////////////////////////////////////
 let char_swap = function(){
 	let input = prompt(msg);
 	
@@ -55,7 +57,9 @@ let char_swap = function(){
 
 alert("Char swap " + char_swap());
 
+////////////////////////////////////
 /// 2 -- Hi string
+////////////////////////////////////
 let hi_string = function() {
 	let input = prompt(msg);
 	
@@ -68,8 +72,9 @@ let hi_string = function() {
 
 alert("Hi string " + hi_string());
 
-
+////////////////////////////////////
 /// 3 -- Three Chars to Front
+////////////////////////////////////
 let three_chars_to_front = function() {
 	let input = prompt(msg);
 
@@ -85,9 +90,11 @@ let three_chars_to_front = function() {
 
 alert("Three Chars To Front " + three_chars_to_front());
 
+////////////////////////////////////
 /// 4 -- Strings to Setnence
+////////////////////////////////////
 let strings_to_sentence = function(){
-	let input = prompt(msg.slice(0,msg.length-1) + " with elements seperated by commas:");
+	let input = prompt(msg.slice(0,msg.length-1) + " with elements seperated by commas.");
 	
 	if(!handle_input(input)){
 		return "";
@@ -98,12 +105,14 @@ let strings_to_sentence = function(){
 		str += `${arr[i]} `;
 	}
 	str += `${arr[arr.length-1].trim()}.`
-	alert("Strings to sentence:\n" + str);
+	alert("Strings to sentence\nThe following items are a list of words: " + str);
 }
 
 strings_to_sentence();
 
+////////////////////////////////////
 /// 5 -- Upper or Lower
+////////////////////////////////////
 let upper_or_lower = function(){
 	let input = prompt(msg);
 	
@@ -120,7 +129,9 @@ let upper_or_lower = function(){
 
 alert("Upper or Lower " + upper_or_lower());
 
+////////////////////////////////////
 /// 6 -- Integer Swap
+////////////////////////////////////
 let integer_swap = function() {
 	let input = prompt("Enter comma seperated list of integers:");
 	
@@ -140,8 +151,9 @@ let integer_swap = function() {
 
 alert("Swapped Integers " + integer_swap());
 
-
+////////////////////////////////////
 /// 7 -- Longest String
+////////////////////////////////////
 let max_length = function (arr){
 	let max = "";
 	for(let i=0; i<arr.length; i++){
@@ -163,7 +175,9 @@ let longest_string = function(){
 }
 longest_string();
 
+////////////////////////////////////
 /// 8 -- Largest Even Number
+////////////////////////////////////
 let even_int_array = function(arr) {
 	let out = [];
 	for(let i=0; i<arr.length; i++){
@@ -201,16 +215,18 @@ let largest_even_number = function() {
 
 largest_even_number();
 
+////////////////////////////////////
 /// 9 -- Current Day
+////////////////////////////////////
 let current_day = function(){
 	let day_of_week = {
-	"0" : "Sunday",
-	"1" : "Monday",
-	"2" : "Tuesday",
-	"3" : "Wednesday",
-	"4" : "Thursday",
-	"5" : "Friday",
-	"6" : "Saturday"
+		"0" : "Sunday",
+		"1" : "Monday",
+		"2" : "Tuesday",
+		"3" : "Wednesday",
+		"4" : "Thursday",
+		"5" : "Friday",
+		"6" : "Saturday"
 	};
 
 	let myDate = new Date();
@@ -225,8 +241,9 @@ let current_day = function(){
 
 current_day();
 
-
+////////////////////////////////////
 /// 10 -- Unlimited Function
+////////////////////////////////////
 let unlimited_function = function(...args){
 	let str = "";
 	for(let i=0; i<args.length; i++){
