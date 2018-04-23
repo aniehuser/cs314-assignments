@@ -113,7 +113,3 @@ let addToP = function(ele, innerhtml){
 	ele.appendChild(p);
 }
 
-
-
-// console.log(users);
-
