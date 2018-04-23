@@ -9,6 +9,29 @@
 
 }
 
+h1,h2,h3,h4,h5,h6{
+	padding: .2em;
+}
+
+h1{
+	font-size: 4em;
+}
+h2{
+	font-size: 3em;
+}
+h3{
+	font-size: 2em;
+}
+h4{
+	font-size: 1em;
+}
+h5{
+	font-size: .75em;
+}
+h6{
+	font-size: .5em;
+}
+
 html {
   font-family: 'ralewayregular', Verdana, sans-serif;
   box-sizing: border-box;
@@ -28,7 +51,7 @@ section {
 }
 
 p {
-  padding-bottom: 10px;
+  padding-bottom: .8em;
 }
 
 button {
@@ -41,6 +64,10 @@ li {
 }
 
 
+.center-text {
+	text-align: center;
+}
+
 /*
 Addition for assignment
 */
@@ -48,3 +75,21 @@ Addition for assignment
   background-color: lightblue;
 }
 
+.click-button {
+	background-color: gray;
+}
+
+.red{
+	color: red;
+}
+.green{
+	color: green;
+}
+
+.pad-1{
+	padding-left: 1em;
+}
+
+.flex {
+	display: inline-flex;
+}
