@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Final</title> 
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <meta http-equiv="Cache-control" content="no-cache">
+    <script type="text/javascript" src="index.js"></script>
+  </head> 
+  <body>
+  
+    <section id="head-of-page">
+      <div class="nav"><a href="./home.html">Home</a></div>
+      <div class="nav nav-selected"><a href="./form.html">Forms</a></div>
+      <div class="nav"><a href="./map.html">Maps</a></div>
+      <div class="nav"><a href="./api.html">API</a></div>
+    </section>
+     <header class="side-bottom-bar add-8-margin">
+      <h2>About You!</h2>
+      <p>Enter some information about yourself.</p>
+    </header>
+    <section class="form-content flex side-bottom-bar pad-content-bottom">
+      <form class="flex-inner pad-content-bottom">
+        <div class="inline-flex children-padding-small">
+          <input type="text" name="first name" id="first" placeholder="First Name">
+          <input type="text" name="last name" id="last" placeholder="Last Name">
+          <input type="text" name="age" id="age" placeholder="Age">
+        </div>
+        <input type="text" name="email" id="email" placeholder="johndoe@gmail.com" class="flex-inner">
+      </form>
+      <button id="submit" class="flex-inner">Submit</button>
+    </section>
+    <section id="submit-results" class="grey-bg side-bottom-bar padding-bot-6"></section>
+    <footer></footer>
+    <script type="text/javascript" src="form-page.js"></script>
+  </body>
+</html>

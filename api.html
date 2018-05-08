@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Final</title> 
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <meta http-equiv="Cache-control" content="no-cache">
+  </head> 
+  <body>
+    <section id="head-of-page">
+      <div class="nav"><a href="./home.html">Home</a></div>
+      <div class="nav"><a href="./form.html">Forms</a></div>
+      <div class="nav"><a href="./map.html">Maps</a></div>
+      <div class="nav nav-selected"><a href="./api.html">API</a></div>
+    </section>
+    <section id="description">
+      <h3>Welcome to Beer Search</h3>
+      <br>
+      <p>
+        Enter a beer name to see information about it, or select random for a random selection.
+      </p> 
+    </section>
+    <section id="search">
+      <form>
+        <input type="text" name="search-bar" placeholder="Beer Name" class="search-beer">
+      </form>
+      <button id="query">Search</button>
+      <button id="random">Random!</button>
+    </section>
+    <section id="result">
+      <div class="placeholder result-content">
+        <h3>Get Searching!</h3>
+      </div>
+    </section>
+    <footer></footer>
+    <script type="text/javascript" src="api-page.js"></script>
+  </body>
+</html>

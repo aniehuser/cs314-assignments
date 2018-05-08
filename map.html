@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Final</title> 
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <meta http-equiv="Cache-control" content="no-cache">
+    <script type="text/javascript" src="index.js"></script>
+  </head> 
+  <body>
+    <header class="side-bottom-bar add-8-margin">
+      <h2>Map of Home</h2>
+    </header>
+    <section id="head-of-page">
+      <div class="nav"><a href="./home.html">Home</a></div>
+      <div class="nav"><a href="./form.html">Forms</a></div>
+      <div class="nav nav-selected"><a href="./map.html">Maps</a></div>
+      <div class="nav"><a href="./api.html">API</a></div>
+    </section>
+    <section id="map"></section>
+    <br>
+    <section class="map-content">
+      <div class="special-header color1-bg"><h3>Marker 1: Home</h3></div>
+      <p>This is the place I grew up. Growing up I only ever knew Portland. My family didn't travel much, and I never left the country until I went to college. As a result, I grew to know this town fairly well.</p>
+    </section>
+    <section class="map-content">
+      <div class="special-header color2-bg"><h3>Marker 2: Jesuit High School</h3></div>
+      <p>Jesuit High School in Beaverton, Oregon was where I spent those four infamous years of high school at. Coming from a very large public middle school, this private, Catholic institution gave me a bit of a culture shock, but I think I adjusted well, and learned a lot from some truly amazing teachers.</p>
+    </section>
+    <section class="map-content padding-bot-6">
+      <div class="special-header color3-bg"><h3>Marker 3: Stepping Stone Cafe</h3></div>
+      <p>If you know me at all, you'd be familiar with my obsession over pancakes. I love pancakes so much I refuse to eat anything other than buttermilk pancakes, and never with syrup -- it masks the taste of the cake! Stepping Stone Cafe has some of the largest, tastiest pancakes Portland has to offer. Their Mancakes are colossal. Many a good mornings were spent here once I got my driver's license.</p>
+    </section>
+    <footer></footer>
+    <script type="text/javascript" src="map-page.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIKamQxnIGE7OkZv6sZAuIan4B-KmveFk&callback=initMap"
+    async defer></script>
+  </body>
+</html>
