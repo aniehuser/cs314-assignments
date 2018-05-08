@@ -62,7 +62,8 @@ function badInput(error) {
 		if(error.msg[i]){
 			let p = document.createElement("p");
 			console.log(typeof(error.val[i]));
-			let outval = (typeof(error.val[i].value)=="string") ? error.val[i].value +" is" : "Cannot have "
+			console.log(error);
+			let outval = (typeof(error.val[i])=="string") ? error.val[i].value +" is" : "Cannot have "
 			p.innerHTML = `${outval} an ${error.msg[i]}.`;
 			container.appendChild(p);
 		}		
@@ -82,8 +83,10 @@ function validate(){
 	let f = $("form input")
 	console.log(f);
 	for(let i=0; i<f.length; i++){
+		f[i].classList.remove("bad-input");
 		if(isEmpty(f[i].value)){
 			error.iserror = true;
+			error.val.push(false)
 			if(!f[i].classList.contains("bad-input")){
 				f[i].classList.add("bad-input");
 				f[i].placeholder="Invalid " + f[i].name;	
